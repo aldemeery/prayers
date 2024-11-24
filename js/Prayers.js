@@ -58,7 +58,7 @@ const Prayers = (function () {
 
             if (remainingTime.hours === 0 && remainingTime.minutes === 0 && remainingTime.seconds === 0) {
                 this.playAdhan();
-                this.showNotification('Adhan', {body: `It's time for ${nextPrayer.name}`});
+                this.showNotification('Prayers', {body: nextPrayer.name});
                 clearInterval(interval);
 
                 setTimeout(() => {
