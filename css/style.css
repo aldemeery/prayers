@@ -1,0 +1,83 @@
+:root {
+    --dark: #0f172a;
+    --light: #ffffff;
+}
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    box-sizing: border-box;
+    background-color: var(--dark);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--dark);
+}
+
+.major-mono {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.reem-kufi {
+    font-family: "Reem Kufi", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.start-btn {
+    color: var(--dark);
+    margin-top: 50px;
+    font-size: 5rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    background-color: var(--light);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background-color: var(--light);
+}
+
+.content {
+    color: var(--light);
+    font-weight: 800;
+    font-size: clamp(3rem, 7vw, 15rem);
+    line-height: 1;
+}
+
+.prayer {
+    margin-top: 5rem;
+}
+
+.time {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 100;
+    color: #eee
+}
