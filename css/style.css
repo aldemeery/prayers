@@ -15,6 +15,18 @@ html {
     background-color: var(--dark);
 }
 
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.12;
+    background-image: url('../assets/pattern.svg');
+    -webkit-mask-image: radial-gradient(ellipse 60% 45% at 50% 50%, black 0%, transparent 75%);
+    mask-image: radial-gradient(ellipse 60% 45% at 50% 50%, black 0%, transparent 75%);
+}
+
 * {
     margin: 0;
     padding: 0;
