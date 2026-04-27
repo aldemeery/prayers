@@ -1,5 +1,6 @@
 :root {
     --dark: #0a0e15;
+    --dark-deep: #06090f;
     --light: #f5f1e8;
     --accent: #d4b876;
 }
@@ -10,6 +11,7 @@ html {
     -moz-tab-size: 4;
     tab-size: 4;
     box-sizing: border-box;
+    background: radial-gradient(ellipse 80% 60% at 50% 50%, #14181f 0%, var(--dark) 60%, var(--dark-deep) 100%);
     background-color: var(--dark);
 }
 
