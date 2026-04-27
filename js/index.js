@@ -26,7 +26,5 @@ const start = () => prayers.start();
 document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
         prayers.requestWakeLock();
-    } else {
-        prayers.releaseWakeLock();
     }
 });
