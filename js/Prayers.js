@@ -1,6 +1,6 @@
 const Prayers = (function () {
     function Prayers (adhan, city, country, adjustments = {fajr: 0, dhuhr: 0, asr: 0, maghrib: 0, isha: 0}) {
-        if (Notification.permission === "default") {
+        if ('Notification' in window && Notification.permission === "default") {
             Notification.requestPermission();
         }
 
@@ -21,6 +21,10 @@ const Prayers = (function () {
     }
 
     Prayers.prototype.requestWakeLock = function () {
+        if (!('wakeLock' in navigator)) {
+            return;
+        }
+
         if (this.wakeLock !== null || document.visibilityState !== 'visible') {
             return;
         }
