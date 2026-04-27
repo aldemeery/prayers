@@ -90,3 +90,14 @@ html {
     margin-top: 3rem;
     font-weight: bold;
 }
+
+.rolling {
+    display: inline-block;
+    animation: digit-roll 380ms cubic-bezier(.2, .7, .2, 1);
+}
+
+@keyframes digit-roll {
+    0%   { transform: translateY(-28%); opacity: 0; }
+    60%  { transform: translateY(2%);   opacity: 1; }
+    100% { transform: translateY(0);    opacity: 1; }
+}
